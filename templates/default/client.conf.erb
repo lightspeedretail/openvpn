@@ -1,6 +1,6 @@
 client
 dev tun
-proto <%= node['openvpn']['proto'] %>
+proto <%= node['openvpn']['config']['proto'] %>
 remote <%= node['openvpn']['gateway'] %> <%= node['openvpn']['port'] %>
 resolv-retry infinite
 nobind
